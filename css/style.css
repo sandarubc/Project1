@@ -1,0 +1,137 @@
+@import url("/css/reset.css");
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.clear-fit{
+    clear: both;
+}
+
+h6{
+    font-size: 0.8rem;
+    line-height: 1.1rem;
+}
+h5{
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+}
+h4{
+    font-size: 1rem;
+    line-height: 1.3rem;
+}
+h3{
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+}
+h2{
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+}
+h1{
+    font-size: 1.8rem;
+    line-height: 2rem;
+}
+
+
+
+/* layout */
+
+:root{
+    --header-height:50px;
+    --nav-width:150px;
+    --layout-border-color:lightgray;
+}
+
+#header{
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    height:var(--header-height);
+    background-color: rgba(255,255, 255,0.87);
+    border-bottom: 1px solid var(--layout-border-color);
+}
+#nav{
+    position: fixed;
+    left: 0;
+    top:var(--header-height);
+    bottom: 0;
+    width:var(--nav-width);
+    background-color: var(--layout-border-color);
+    
+
+}
+#main{
+    margin-left: var(--nav-width);
+    margin-top: var(--header-height);
+    
+}
+
+#footer{
+    text-align: center;
+    padding: 10px 10px 15px 10px;
+    border-top: 1px solid var(--layout-border-color);
+}
+
+#logo{
+    padding-left: 10px;
+}
+#smi-container{
+    height: 100%;
+    float: right;
+    right: 10px;
+}
+#smi-container .smi-icons{
+    float: left;
+    height: 100%;
+    padding: 10px 15px;
+    transition: background-color 400ms,width 250ms;
+    overflow: hidden;
+    font-weight: 500;
+    white-space: nowrap;
+    transition: width 250ms;
+    width: 40px;
+    padding: 15px 10px;
+
+}
+#smi-container .smi-icons ion-icon{
+    font-size: 1.3rem;
+    color: #666;
+    padding-right: 10px;
+    vertical-align: sub;
+}
+
+#smi-icon .smi-icons:hover{
+    color: white;
+    width: 250px;
+}
+#smi-icon .smi-icons:hover ion-icon{
+    color: white;
+}
+#smi-container .smi-icons:nth-child(1) ion-icon:hover{
+    background-color: #3b5998;
+}
+#smi-container .smi-icons:nth-child(2) ion-icon:hover{
+    background-color: #0e76a8;
+}
+#smi-container .smi-icons:nth-child(3) ion-icon:hover{
+    background-color:#00acee ;
+}
+#smi-container .smi-icons:nth-child(4) ion-icon:hover{
+    background-color: #3f729b;
+}
+#smi-container .smi-icons:nth-child(5) ion-icon:hover{
+    background-color: red;
+}
+#smi-container .smi-icons:nth-child(6) ion-icon:hover{
+    background-color:rgba(0, 0, 0, 1);
+}
+#smi-container .smi-icons:nth-child(7) ion-icon:hover{
+    background-color:rgb(101, 103, 165);
+}
+#smi-container .smi-icons ion-icon{
+    border-right: 1px solid var(--layout-border-color);
+}
